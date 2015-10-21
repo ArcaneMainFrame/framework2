@@ -163,6 +163,10 @@
 	&:hover {
 		color: $charcoal;
 	}
+
+	&:active {
+		background: $silver;
+	}
 	
 }
 
