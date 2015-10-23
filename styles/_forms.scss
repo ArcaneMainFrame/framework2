@@ -13,6 +13,7 @@ legend {
 	font-weight: 300;
 	color: $steel-blue;
 	margin:.5em 0;
+	padding: 0;
 }
 
 label {
@@ -26,6 +27,7 @@ label {
 
 ::-moz-placeholder { 
    font-style: italic; 
+   color: lighten($charcoal, 10%);
 }
 
 :-ms-input-placeholder {  
@@ -71,3 +73,52 @@ textarea {
 	padding-left: 1.5em;
 	padding-right: 1.5em;
 }
+
+.file-upload {
+	@extend .btn;
+	@include button-variant($platinum, $steel-blue);
+	display: inline-block;
+    position: relative;
+    overflow: hidden;
+    margin: 0 10px 10px 0;
+    vertical-align:middle;
+}
+
+.upload-container {
+	display: flex;
+	flex-wrap: wrap;
+
+	label {
+		width:100%;
+	}
+}
+
+.file-upload input.upload {
+    position: absolute;
+    bottom:0;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.name-holder {
+	border: 1px solid $charcoal;
+	background: transparent;
+	display: inline;
+	height: 44px;
+	padding:0 10px;
+}
+
+button[type="submit"].btn {
+	font-weight: 600;
+	margin-top: 1em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+

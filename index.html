@@ -61,8 +61,6 @@
             <div class="contain">
                 <section>
                     <h2>Forms</h2>
-
-                    <h3>Form Single Column</h3>
                     <form>
                         <fieldset>
                             <legend>Basic Information</legend>
@@ -80,8 +78,15 @@
                                 <option>Option 3</option>
                             </select>
 
-                            <label>Upload a letter</label>
-                             <input name="coverletter" class="upload" type="file">
+                             <div class="upload-container">
+                                <label>Cover Letter</label>
+                                 <div class="file-upload">
+                                    <span>Choose File</span>
+                                 <input name="coverletter" class="upload" type="file">
+                            </div>
+                            <input class="name-holder" placeholder="No file selected" disabled="disabled" />
+
+                        </div>
                         </fieldset>
 
                         <fieldset>
@@ -90,6 +95,8 @@
                             <label>Message</label>
                              <textarea>
                             </textarea>
+
+                            <button type="submit" class="btn btn-moss">Submit</button>
                         </fieldset>
                     </form>
                 </section>
