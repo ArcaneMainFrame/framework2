@@ -60,16 +60,42 @@
 
             <div class="contain">
                 <section>
+                    <ul class="pagination">
+                        <li><a href="#">First</a></li>
+                        <li><a href="#">&laquo;</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li class="active"><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                        <li><a href="#">Last</a></li>
+                    </ul>
+                    <p class="pagination-counter">Page 3 of 6</p>
+
+                    <ul class="breadcrumbs">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li class="active"><a href="#">Our Company</a></li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="contain">
+                <section>
                     <h2>Forms</h2>
                     <form>
                         <fieldset>
                             <legend>Basic Information</legend>
 
                              <label>First Name</label>
-                            <input type="text">
+                            <input class="has-error" type="text">
 
                             <label>Last Name</label>
                             <input type="text" placeholder="Enter your name here">
+
+                             <label>Last Name</label>
+                            <input type="text" disabled="disabled" placeholder="Enter your name here">
 
                             <label>Select an Option</label>
                             <select>
@@ -99,6 +125,31 @@
                             <button type="submit" class="btn btn-moss">Submit</button>
                         </fieldset>
                     </form>
+                </section>
+            </div>
+
+            <div class="contain">
+                <section>
+                    <h3>Mobile Menu</h3>
+
+                    <header class="navbar">
+                        <h3>Logo</h3>
+                        <button class="menu-toggle">Menu</button>
+                         <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+                   
                 </section>
             </div>
 

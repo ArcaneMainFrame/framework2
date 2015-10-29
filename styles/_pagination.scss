@@ -1,0 +1,32 @@
+.pagination {
+	list-style-type: none;
+	font-size: 1.2em;
+	margin-bottom: 10px;
+	text-align: center;
+
+	li {
+		display: inline-block;
+	}
+
+	a {
+		color: $charcoal;
+		display: block;
+		padding:10px 15px;
+		text-decoration: none;
+
+		&:hover,
+		&:active {
+			background: $silver;
+		}
+	}
+
+	.active {
+		a {
+			color: lighten($charcoal, 50%);
+		}
+	}
+}
+
+.pagination-counter {
+	text-align: center;
+}
