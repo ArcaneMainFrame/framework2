@@ -15,6 +15,29 @@
     </head>
     <body>
         <main>
+            <header class="navbar">
+                <img src="img/logo.png" class="logo" alt="Colonial Life Logo" />
+                <button class="menu-toggle">
+                    <i class="icon-bar"></i>
+                    <i class="icon-bar"></i>
+                    <i class="icon-bar"></i>
+                    MENU
+                </button>
+                 <nav>
+                    <button class="menu-return" href="#">   X Close</button>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
             <div class="contain">
                 <section>
                     <h3>Buttons w/ Shadow</h3>
@@ -99,10 +122,16 @@
 
                             <label>Select an Option</label>
                             <select>
-                                <option>Option 1</option>
+                                <option>Option 1</option>e
                                 <option>Option 2</option>
                                 <option>Option 3</option>
                             </select>
+
+                            <input id="male" type="radio" name="gender" value="male">
+                            <label for="male">Male</label>
+
+                            <input id="female" type="radio" name="gender" value="female">
+                            <label for="female">Female</label>
 
                              <div class="upload-container">
                                 <label>Cover Letter</label>
@@ -129,30 +158,10 @@
             </div>
 
             <div class="contain">
-                <section>
-                    <h3>Mobile Menu</h3>
 
-                    <header class="navbar">
-                        <h3>Logo</h3>
-                        <button class="menu-toggle">Menu</button>
-                         <nav>
-                            <ul>
-                                <li>
-                                    <a href="#">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#">About</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </header>
-                   
-                </section>
             </div>
-
+<div class="overlay">
+</div>
         </main>
         <script src="js/main.js"></script>
     </body>
